@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="notification.css">
+</head>
+<body>
+    <div class="Message" id="js-timer" style="background:blue">
+        <div class="Message-icon">
+          <i class="fa fa-bell-o"></i>
+        </div>
+        <div class="Message-body">
+          <p>This is a simple, but friendly, notification.</p>
+          <p class="u-italic">It will disappear within a few seconds.</p>
+        </div>
+        <button class="Message-close js-messageClose"><i class="fa fa-times"></i></button>
+      </div>
+      
+      <div class="Message Message--orange"style="background:orange;">
+        <div class="Message-icon">
+          <i class="fa fa-exclamation"></i>
+        </div>
+        <div class="Message-body">
+          <p>This is a simple notification with a brighter color...</p>
+          <p>If you bring you mouse here you can close it manually.</p>
+        </div>
+        <button class="Message-close js-messageClose"><i class="fa fa-times"></i></button>
+      </div>
+      
+      
+      <div class="Message Message--green" style="background:rgb(175, 184, 54)">
+        <div class="Message-icon">
+          <i class="fa fa-check"></i>
+        </div>
+        <div class="Message-body">
+          <p>This is a message telling you that everything is a-okay!</p>
+          <p>Good job, and good riddance.</p>
+        </div>
+        <button class="Message-close js-messageClose"><i class="fa fa-times"></i></button>
+      </div>
+      
+      <div class="Message Message--red" style="background:rgb(156, 25, 25)">
+        <div class="Message-icon">
+          <i class="fa fa-times"></i>
+        </div>
+        <div class="Message-body">
+          <p>This is a notification that something went wrong...</p>
+          <button class="Message-button" id="js-helpMe" style="background:blue">Yikes, help me please!</button>
+          <button class="Message-button js-messageClose" style="background:green">Don't care.</button>
+        </div>
+        <button class="Message-close js-messageClose"><i class="fa fa-times"></i></button>
+      </div>
+      
+      <div class="Message" style="background:rgb(32, 186, 197)">
+        <div class="Message-icon">
+          <i class="fa fa-bell-o"></i>
+        </div>
+        <div class="Message-body">
+          <p>Do you know that you can assign status and relation to a company right in the visit list?</p>
+          <button class="Message-button" id="js-showMe" style="background:blue">Show me how</button>
+          <button class="Message-button js-messageClose" style="background:green">Nah, not interested</button>
+        </div>
+        <button class="Message-close js-messageClose"><i class="fa fa-times"></i></button>
+      </div>
+      
+      <div class="Message Message--orange" style="background:blue">
+        <div class="Message-icon">
+          <i class="fa fa-exclamation"></i>
+        </div>
+        <div class="Message-body">
+          <p>You haven't authorized your LinkedIn account. Would you like some help with that?</p>
+          <p class="u-italic">With your account connected we can show you what connections you have at a company that visited your site!</p>
+          <button class="Message-button" id="js-authMe"style="background:blue">Authorize!</button>
+          <button class="Message-button js-messageClose" style="background:rgb(197, 33, 148)">I'll just keep using carrier pigeons</button>
+        </div>
+        <button class="Message-close js-messageClose" style="background:rgb(22, 173, 98)"><i class="fa fa-times"></i></button>
+      </div>
+      <script src="notification.js"></script>
+</body>
+</html>

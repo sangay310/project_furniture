@@ -1,0 +1,51 @@
+<html>
+  <head>
+    <title>Leave Application Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">    
+    <link rel="stylesheet" href="lea.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+    <script src="leave.js"></script>
+</head>
+  <body>
+    <div class="testbox">
+    <form onSubmit="saveFile()">
+      <div class="banner">
+        <h1>Leave Application Form</h1>
+      </div>
+      <div class="item">
+        <p>Name<span class="required">*</span></p>
+        <input type="text" name="name" id="name" required/>
+      </div>
+      <div class="item">
+        <p>Start Date<span class="required">*</span></p>
+        <input type="date" name="start-date" id="start-date" required/>
+        <i class="fas fa-calendar-alt"></i>
+      </div>
+      <div class="item">
+        <p>End Date<span class="required">*</span></p>
+        <input type="date" name="end-date" id="end-date" required/>
+        <i class="fas fa-calendar-alt"></i>
+      </div>
+           <label for="selector"> <!-- Can add label if want -->
+       <p>Application Type<span class="required">*</span></p>
+             <div class="item">
+       <select id="selector"> <!-- Use "select" to create object -->
+         <option value="2">Option 1</option> <!-- Add all applicable options -->
+         <option value="3">Option 2</option>
+         <option value="1">Option 3</option> <!-- add selected to change default from first option -->
+       </select>
+             </div>
+     </label>
+      <div class="item">
+        <p>Reason<span class="required">*</span></p>
+        <textarea rows="3" id="reason" name="reason" required></textarea>
+      </div>
+      <div class="btn-block">
+        <button type="submit" id="send">Send Application</button>
+      </div>
+    </form>
+    </div>
+  </body>
+</html>
